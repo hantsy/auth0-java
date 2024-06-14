@@ -20,7 +20,7 @@ oss {
     organization 'auth0'
     description 'Java client library for the Auth0 platform.'
     baselineCompareVersion '2.0.0'
-    testInJavaVersions = [8, 11, 17]
+    testInJavaVersions = [17, 21]
     skipAssertSigningConfiguration true
 
     developers {
@@ -53,8 +53,8 @@ java {
 }
 
 compileJava {
-    sourceCompatibility '1.8'
-    targetCompatibility '1.8'
+    sourceCompatibility '17'
+    targetCompatibility '17'
 
     options.compilerArgs << "-Xlint:deprecation" << "-Xlint:unchecked" << "-Werror"
 }
@@ -72,7 +72,7 @@ test {
 }
 
 ext {
-    okhttpVersion = '4.11.0'
+    okhttpVersion = '5.0.0.Alpha-14'
     hamcrestVersion = '2.2'
     jupiterVersion = '5.9.3'
 }
