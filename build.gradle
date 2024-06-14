@@ -34,9 +34,9 @@ def signingKeyPwd = findProperty('signingPassword')
 //    }
 //}
 
-signing {
-  useInMemoryPgpKeys(signingKey, signingKeyPwd)
-}
+//signing {
+//  useInMemoryPgpKeys(signingKey, signingKeyPwd)
+//}
 
 jacocoTestReport {
     reports {
