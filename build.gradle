@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
-    id 'com.auth0.gradle.oss-library.java'
+ //   id 'com.auth0.gradle.oss-library.java'
 }
 
 repositories {
@@ -72,7 +72,7 @@ test {
 }
 
 ext {
-    okhttpVersion = '5.0.0.Alpha-14'
+    okhttpVersion = '5.0.0-alpha.14'
     hamcrestVersion = '2.2'
     jupiterVersion = '5.9.3'
 }
