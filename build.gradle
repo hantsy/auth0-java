@@ -40,14 +40,14 @@ def signingKeyPwd = findProperty('signingPassword')
 
 jacocoTestReport {
     reports {
-        xml.enabled = true
-        html.enabled = true
+ //       xml.enabled = true
+ //       html.enabled = true
     }
 }
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(8)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
