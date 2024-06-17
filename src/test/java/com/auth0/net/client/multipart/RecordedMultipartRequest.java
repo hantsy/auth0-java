@@ -42,8 +42,10 @@ public class RecordedMultipartRequest {
         boundary = separator.replaceFirst("--", "");
 
         String strLine;
-        while (!eof.equals(strLine = br.readLine())) {
-            if (strLine.equals(separator) || strLine.isEmpty()) {
+        while (true) {
+            strLine = br.readLine();
+            if (eof.equals(strLine)|| strLine==null) break;
+            if (separator.equals(strLine) ||strLine.isEmpty()) {
                 continue;
             }
 
