@@ -44,8 +44,8 @@ public class RecordedMultipartRequest {
         String strLine;
         while (true) {
             strLine = br.readLine();
-            if (eof.equals(strLine)|| strLine==null) break;
-            if (separator.equals(strLine) ||strLine.isEmpty()) {
+            if (eof.equals(strLine) || strLine == null) break;
+            if (separator.equals(strLine) || strLine.trim().isEmpty()) {
                 continue;
             }
 
