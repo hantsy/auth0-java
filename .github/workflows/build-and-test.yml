@@ -15,7 +15,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - uses: gradle/gradle-build-action@db35f2304698ac6ff98958322dfd3db0a5da9fdf
+      - uses: gradle/gradle-build-action@66535aaf56f831b35e3a8481c9c99b665b84dd45
         with:
           arguments: assemble check jacocoTestReport --continue --console=plain
       - uses: codecov/codecov-action@e28ff129e5465c2c0dcc6f003fc735cb6ae0c673
